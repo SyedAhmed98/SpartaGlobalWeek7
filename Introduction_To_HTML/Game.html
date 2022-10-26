@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Game</title>
+    <link href="./StyleSheet.css" rel="stylesheet" />
+    <script src="./Main.js" defer></script>
+    <script src="./Game.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.4.2/lib/p5.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/addons/p5.sound.min.js" defer></script>
+</head>
+
+<body>
+    <nav class="container">
+        <ul class="navbar-btn-list">
+            <li class="navbar-btn-item"><a href="./index.html">Home</a></li>
+            <li class="navbar-btn-item"><a href="https://www.linkedin.com/in/syed-n-ahmed/" target="_blank">LinkedIn</a></li>
+            <li class="navbar-btn-item"><a href="https://github.com/SyedAhmed98" target="_blank">GitHub</a></li>
+            <li class="navbar-btn-item"><a href="./Game.html">Game</a></li>
+            <li class="navbar-btn-item"><a href="./PeterDemo.html">PeterDemo</a></li>
+        </ul>
+    </nav>
+
+    <h1 id="greeting-label" onmouseover="hoverAction('greeting-label')">Hello There</h1>
+    <button onclick="greeting() ">Say Hello!</button>
+    <hr />
+
+    <section id="gameContainer">
+        <h2>Pop the Balloons!</h2>
+        <p>Score: <span id="score">0</span></p>
+    </section>
+</body>
+
+</html>

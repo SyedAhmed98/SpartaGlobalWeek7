@@ -1,0 +1,41 @@
+h1 {
+    color: purple;
+}
+
+body {
+    background-color: pink;
+}
+
+img {
+    width: 200px;
+    border: 5px purple solid;
+    border-radius: 25%;
+}
+
+#main-title {
+    font-size: 5rem;
+    color: purple;
+}
+
+.demo-class {
+    background-color: lightblue;
+}
+
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.container {
+    width: 75%;
+    margin: auto;
+}
+
+.navbar-btn-list {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.navbar-btn-item {
+    list-style-type: none;
+}
