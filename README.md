@@ -14,10 +14,23 @@
 
 ## Projects
 ### HTML Introduction Lesson
-**Lesson** _[Introduction To HTML](./Introduction_To_HTML)_
+**LESSON & EXERCISE** _[Introduction To HTML](./Introduction_To_HTML)_ This project contains the work for both following topics; [HTML](#html), [CSS](#css), [JavaScript](#javascript).
 
 ---
 
 <br>
 
 # Notes
+## HTML
+
+## CSS
+
+## JavaScript
+
+## Razor Pages
+
+## ASP.NET MVC Walkthrough
+
+## Sparta ToDo App Walkthrough
+
+### Authentication & Authorisation
