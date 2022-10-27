@@ -1,4 +1,9 @@
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using RazorPagesMVCApp.Data;
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddDbContext<RazorPagesMVCAppContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("RazorPagesMVCAppContext") ?? throw new InvalidOperationException("Connection string 'RazorPagesMVCAppContext' not found.")));
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
