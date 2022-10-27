@@ -1,6 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using RazorPagesMVCApp.Data;
+using RazorPagesMVCApp.Models;
+
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<RazorPagesMVCAppContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("RazorPagesMVCAppContext") ?? throw new InvalidOperationException("Connection string 'RazorPagesMVCAppContext' not found.")));
@@ -9,6 +11,13 @@ builder.Services.AddDbContext<RazorPagesMVCAppContext>(options =>
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
+
+// Add database seed class
+using (var scope = app.Services.CreateScope())
+{
+    var services = scope.ServiceProvider;
+    SeedData.Initialize(services);
+}
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
